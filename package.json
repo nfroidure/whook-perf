@@ -1,0 +1,30 @@
+{
+  "name": "whook-perf",
+  "version": "0.0.0",
+  "description": "Testing performances oif whook vs others.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "whook": "babel-node whook.js",
+    "express": "node express.js",
+    "koa": "node --harmony koa.js",
+    "cli": "env NPM_RUN_CLI=1"
+  },
+  "author": "Nicolas Froidure",
+  "license": "MIT",
+  "keywords": [
+    "whook",
+    "perf"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:nfroidure/whook.git"
+  },
+  "dependencies": {
+    "babel": "^5.8.23",
+    "whook": "git+ssh://git@github.com:nfroidure/whook",
+    "express": "^4.13.3",
+    "koa": "^1.0.0",
+    "koa-route": "^2.4.2"
+  }
+}
